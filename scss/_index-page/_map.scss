@@ -1,0 +1,71 @@
+
+// map section setup starts
+
+.map{
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: -1px;
+    bottom: -100px;
+    width: 100%;
+    transform: rotate(180deg);
+    height: 232px;
+    background-image: url('../images/white-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #map{
+    width: 100%;
+    height: 740px;
+  }
+}
+
+// map section setup ends
+
+@media (max-width: 800px){
+  .map{
+    &::before{
+      height: 150px;
+    }
+    #map{
+      height: 640px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .map{
+    &::before{
+      height: 100px;
+    }
+    #map{
+      height: 540px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .map{
+    &::before{
+      height: 70px;
+    }
+    #map{
+      height: 440px;
+    }
+  }
+}
+
+@media (max-width: 400px){
+  .map{
+    &::before{
+      display: none;
+    }
+    #map{
+      height: 400px;
+    }
+  }
+}

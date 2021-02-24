@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SET</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  
+  <header class="header wow animate__animated animate__fadeInDown" data-wow-delay="1s"">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a class="logo__link" href="#">
+            <img src="images/icons/logo-icon.png" alt="logotype">
+          </a>
+        </div>
+        <div class="header__adaprive-btn">
+          <span></span>
+        </div>
+        <div class="header__right">
+          <div class="header__right-contacts">
+            <div class="header__contacts-wrapper">
+              <ul class="header__contacts">
+                <li class="header__contacts-item">
+                  <a class="header__contacts-link" href="tel:6468668200">
+                    <img src="images/icons/phone-icon.svg" alt="phone icon">
+                    (646) 866-8200
+                  </a>
+                </li>
+                <li class="header__contacts-item">
+                  <a class="header__contacts-link" href="#">
+                    <img src="images/icons/mail-icon.svg" alt="mail icon">
+                    info.set@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="header__social">
+              <li class="header__social-item">
+                <a class="header__social-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt"
+                    height="16pt" viewBox="0 0 16 16" version="1.1">
+                    <g>
+                      <path
+                        d="M 13.957031 9 L 14.667969 6.105469 L 10.222656 6.105469 L 10.222656 4.226562 C 10.222656 3.433594 10.84375 2.660156 12.835938 2.660156 L 14.855469 2.660156 L 14.855469 0.195312 C 14.855469 0.195312 13.023438 0 11.269531 0 C 7.605469 0 5.214844 1.386719 5.214844 3.898438 L 5.214844 6.105469 L 1.144531 6.105469 L 1.144531 9 L 5.214844 9 L 5.214844 16 L 10.222656 16 L 10.222656 9 Z M 13.957031 9 " />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt"
+                    height="16pt" viewBox="0 0 16 16" version="1.1">
+                    <g>
+                      <path
+                        d="M 14.355469 4.742188 C 14.367188 4.882812 14.367188 5.027344 14.367188 5.167969 C 14.367188 9.503906 11.066406 14.496094 5.035156 14.496094 C 3.175781 14.496094 1.453125 13.960938 0 13.027344 C 0.265625 13.054688 0.519531 13.066406 0.792969 13.066406 C 2.324219 13.066406 3.734375 12.546875 4.863281 11.664062 C 3.421875 11.632812 2.214844 10.691406 1.796875 9.390625 C 2 9.421875 2.203125 9.441406 2.417969 9.441406 C 2.710938 9.441406 3.003906 9.402344 3.277344 9.328125 C 1.777344 9.023438 0.648438 7.707031 0.648438 6.113281 L 0.648438 6.070312 C 1.085938 6.316406 1.59375 6.46875 2.132812 6.488281 C 1.25 5.898438 0.671875 4.894531 0.671875 3.757812 C 0.671875 3.148438 0.832031 2.589844 1.117188 2.101562 C 2.730469 4.089844 5.15625 5.390625 7.878906 5.53125 C 7.828125 5.289062 7.796875 5.035156 7.796875 4.78125 C 7.796875 2.976562 9.257812 1.503906 11.074219 1.503906 C 12.019531 1.503906 12.871094 1.898438 13.472656 2.539062 C 14.214844 2.394531 14.921875 2.121094 15.554688 1.746094 C 15.308594 2.507812 14.792969 3.148438 14.113281 3.554688 C 14.773438 3.480469 15.410156 3.300781 16 3.046875 C 15.554688 3.695312 14.996094 4.273438 14.355469 4.742188 Z M 14.355469 4.742188 " />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt"
+                    height="16pt" viewBox="0 0 16 16" version="1.1">
+                    <g>
+                      <path
+                        d="M 8.003906 4.40625 C 5.730469 4.40625 3.898438 6.007812 3.898438 7.996094 C 3.898438 9.984375 5.730469 11.585938 8.003906 11.585938 C 10.273438 11.585938 12.105469 9.984375 12.105469 7.996094 C 12.105469 6.007812 10.273438 4.40625 8.003906 4.40625 Z M 8.003906 10.332031 C 6.535156 10.332031 5.335938 9.285156 5.335938 7.996094 C 5.335938 6.710938 6.53125 5.664062 8.003906 5.664062 C 9.476562 5.664062 10.671875 6.710938 10.671875 7.996094 C 10.671875 9.285156 9.472656 10.332031 8.003906 10.332031 Z M 13.230469 4.257812 C 13.230469 4.726562 12.804688 5.097656 12.273438 5.097656 C 11.742188 5.097656 11.316406 4.722656 11.316406 4.257812 C 11.316406 3.796875 11.746094 3.421875 12.273438 3.421875 C 12.804688 3.421875 13.230469 3.796875 13.230469 4.257812 Z M 15.949219 5.109375 C 15.890625 3.988281 15.597656 2.992188 14.65625 2.175781 C 13.722656 1.355469 12.585938 1.101562 11.304688 1.042969 C 9.980469 0.976562 6.019531 0.976562 4.699219 1.042969 C 3.421875 1.097656 2.285156 1.351562 1.347656 2.171875 C 0.40625 2.992188 0.117188 3.984375 0.0546875 5.105469 C -0.0195312 6.261719 -0.0195312 9.726562 0.0546875 10.882812 C 0.113281 12.007812 0.40625 13 1.347656 13.820312 C 2.285156 14.636719 3.417969 14.894531 4.699219 14.949219 C 6.019531 15.015625 9.980469 15.015625 11.304688 14.949219 C 12.585938 14.898438 13.722656 14.640625 14.65625 13.820312 C 15.59375 13 15.886719 12.007812 15.949219 10.882812 C 16.023438 9.726562 16.023438 6.265625 15.949219 5.109375 Z M 14.242188 12.125 C 13.964844 12.738281 13.425781 13.210938 12.722656 13.457031 C 11.667969 13.820312 9.167969 13.738281 8.003906 13.738281 C 6.839844 13.738281 4.335938 13.820312 3.285156 13.457031 C 2.585938 13.210938 2.046875 12.742188 1.765625 12.125 C 1.347656 11.203125 1.441406 9.015625 1.441406 7.996094 C 1.441406 6.976562 1.351562 4.789062 1.765625 3.867188 C 2.042969 3.257812 2.582031 2.785156 3.285156 2.539062 C 4.339844 2.171875 6.839844 2.257812 8.003906 2.257812 C 9.167969 2.257812 11.671875 2.175781 12.722656 2.539062 C 13.421875 2.78125 13.960938 3.253906 14.242188 3.867188 C 14.660156 4.789062 14.5625 6.976562 14.5625 7.996094 C 14.5625 9.015625 14.660156 11.207031 14.242188 12.125 Z M 14.242188 12.125 " />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__navigation">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">About Us</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Our Product</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Partners</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__right-btn" href="#">Write to us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="top-slider">
+      <div class="top-slider__video-wrapper">
+        <video class="top-slider__video" autoplay="autoplay" preload="auto" muted="muted" loop="loop">
+          <source src="images/top-slider-bg/bg_pellet.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="top-slider__container">
+        <div class="top-slider__inner wow animate__animated animate__fadeInLeft" data-wow-delay="1s"">
+          <div class="top-slider__item">
+            <div class="top-slider__item-contenct">
+              <p class="top-slider__subtitle">Short rotation woody energy crop supply chains</p>
+              <h1 class="top-slider__title">Bagasse briquettes</h1>
+              <p class="top-slider__text">
+                Generally, briquette manufacture (briquetting) involves the collection of combustible materials that
+                are
+                not
+                usable as such because of their low density
+              </p>
+              <a class="top-slider__btn" href="#">More Details</a>
+            </div>
+          </div>
+          <div class="top-slider__item">
+            <div class="top-slider__item-contenct">
+              <p class="top-slider__subtitle">Oxygen depletion and poisoning</p>
+              <h1 class="top-slider__title">Biomass and Biofuel Production</h1>
+              <p class="top-slider__text">
+                Wood pellets can release significant amounts of CO, CO2, and CH4, which can lead to oxygen depletion.
+              </p>
+              <a class="top-slider__btn" href="#">More Details</a>
+            </div>
+          </div>
+          <div class="top-slider__item">
+            <div class="top-slider__item-contenct">
+              <p class="top-slider__subtitle">Types and properties of fuels from nonfossil fuel sources</p>
+              <h1 class="top-slider__title">Pellets and briquettes</h1>
+              <p class="top-slider__text">
+                Pellets made of compressed sawdust or wood shavings have been available in many parts of the world for
+                more
+                than several decades.
+              </p>
+              <a class="top-slider__btn" href="#">More Details</a>
+            </div>
+          </div>
+          <div class="top-slider__item">
+            <div class="top-slider__item-contenct">
+              <p class="top-slider__subtitle">Wood Pellets</p>
+              <h1 class="top-slider__title">environment friendly fuel</h1>
+              <p class="top-slider__text">
+                Wood pellets are small cylindrical pieces 10–20 mm long with diameters varying from 5 to 10 mm
+                produced
+                from
+                fine-ground wood bark.
+              </p>
+              <a class="top-slider__btn" href="#">More Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content wow animate__animated animate__fadeInLeft" data-wow-delay="1s"">
+            <h3 class="title about__title">
+              About Company
+            </h3>
+            <div class="about__text-box">
+              <p class="about__text">
+                Our product is a combination of modern equipment, quality materials and full compliance with production
+                technology.
+              </p>
+              <p class="about__text">
+                The line capacity of the factory is 1.2 tons per hour or 800 tons per month.
+              </p>
+              <p class="about__text">
+                "SibEcoTerm" is a production organization that produces pellets. The company was established with the
+                aim
+                of
+                recycling lumber production waste from local raw materials.
+              </p>
+            </div>
+          </div>
+          <div class="about__slider wow animate__animated animate__fadeInRight" data-wow-delay="1s"">
+            <div class="about__slider-item">
+              <img src="images/about__slider/1.jpg" alt="image 1">
+            </div>
+            <div class="about__slider-item">
+              <img src="images/about__slider/2.jpg" alt="image 2">
+            </div>
+            <div class="about__slider-item">
+              <img src="images/about__slider/3.jpg" alt="image 3">
+            </div>
+            <div class="about__slider-item">
+              <img src="images/about__slider/4.jpg" alt="image 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="production">
+      <div class="container">
+        <h3 class="title production__title wow animate__animated animate__fadeInUp" data-wow-offset="150"">
+          PRODUCTION OF FUEL GRANULES
+        </h3>
+      </div>
+      <div class="production__background wow animate__animated animate__fadeInUp" data-wow-offset="100"">
+        <div class="container">
+          <div class="production__items">
+            <div class="production__item">
+              <img class="production__image" src="images/icons/tools-icon.svg" alt="tools">
+              <p class="production__text">
+                We are using the latest technologies
+              </p>
+            </div>
+            <div class="production__item">
+              <img class="production__image" src="images/icons/warehouse-icon.svg" alt="warehouse">
+              <p class="production__text">
+                Warehouse for 700 tons with the possibility of expanding warehouse space.
+              </p>
+            </div>
+            <div class="production__item">
+              <img class="production__image" src="images/icons/personal-icon.svg" alt="personal">
+              <p class="production__text">
+                Qualified and trained personal works
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="advantages">
+      <div class="advantages__wrapper">
+        <div class="container">
+          <h3 class="title advantages__title wow animate__animated animate__fadeInUp" data-wow-offset="200"">
+            ADVANTAGES OF PELLETS
+          </h3>
+          <div class="advantages__inner">
+            <div class="advantages__items-left wow animate__animated animate__fadeInLeft" data-wow-offset="150"">
+              <div class="advantages__item advantages__item--one">
+                <div class="advantages__item-number">1</div>
+                <div class="advantages__item-content">
+                  <div class="advantages__item-title">
+                    Efficient heat production with more than low consumption
+                  </div>
+                  <p class="advantages__item-text">
+                    1 ton of pellets gives as much heat energy as 1.5 tons of firewood.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages__item advantages__item--two">
+                <div class="advantages__item-number">2</div>
+                <div class="advantages__item-content">
+                  <div class="advantages__item-title">Minimum waste</div>
+                  <p class="advantages__item-text">
+                    cinder is 1% of the initial size of fuel.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages__item advantages__item--three">
+                <div class="advantages__item-number">3</div>
+                <div class="advantages__item-content">
+                  <div class="advantages__item-title">
+                    Rarity of kettle cleaning.
+                  </div>
+                  <p class="advantages__item-text">
+                    no more than 1-2 times a month.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages__item advantages__item--four">
+                <div class="advantages__item-number">4</div>
+                <div class="advantages__item-content">
+                  <div class="advantages__item-title">
+                    uniform composition and consistency
+                  </div>
+                  <p class="advantages__item-text">
+                    temperature.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__items-image wow animate__animated animate__fadeInUp" data-wow-offset="0"">
+              <img src="images/advantages-bg.jpg" alt="advantages background">
+            </div>
+            <div class="advantages__items-right wow animate__animated animate__fadeInRight" data-wow-offset="150"">
+              <div class="advantages__item advantages__item--five">
+                <div class="advantages__item-number">5</div>
+                <div class="advantages__item-content">
+                  <div class="advantages__item-title">
+                    No sparking, environment friendly, less dangerous
+                  </div>
+                  <p class="advantages__item-text">
+                    temperature.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages__item advantages__item--six">
+                <div class="advantages__item-number">6</div>
+                <div class="advantages__item-content">
+                  <div class="advantages__item-title">
+                    Convenient transportation
+                  </div>
+                  <p class="advantages__item-text">
+                    pellets are delivered in bags, this technique reduce delivering price
+                  </p>
+                </div>
+              </div>
+              <div class="advantages__item advantages__item--seven">
+                <div class="advantages__item-number">7</div>
+                <div class="advantages__item-content">
+                  <div class="advantages__item-title">
+                    Acceptable fuel cost
+                  </div>
+                  <p class="advantages__item-text">
+                    cheaper than wood fuel
+                  </p>
+                </div>
+              </div>
+              <div class="advantages__item advantages__item--eight">
+                <div class="advantages__item-number">8</div>
+                <div class="advantages__item-content">
+                  <div class="advantages__item-title">
+                    Экологическая чистота
+                  </div>
+                  <p class="advantages__item-text">
+                    combustion produces only 0.03% sulfur
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="our-product">
+      <div class="container">
+        <h3 class="title our-product__title wow animate__animated animate__fadeInUp" data-wow-offset="150"">
+          our product
+        </h3>
+        <div class="our-product__inner">
+          <div class="our-product__image-box wow animate__animated animate__fadeInLeft" data-wow-offset="50"">
+            <div class="our-product__image">
+              <img src="images/decor/our-product-1.jpg" alt="our-product image">
+            </div>
+            <div class="our-product__image">
+              <img src="images/decor/our-product-2.jpg" alt="our-product image">
+            </div>
+          </div>
+          <div class="our-product__form-wrapper wow animate__animated animate__fadeInRight" data-wow-offset="200"">
+            <h4 class="our-product__form-title">
+              FREE CONSULTATION
+            </h4>
+            <p class="our-product__form-text">
+              Leave your contact details and we will connect with you
+            </p>
+            <form class="our-product__form" action="#">
+              <input class="our-product__form-input" type="text" placeholder="Your name">
+              <input class="our-product__form-input" type="tel" placeholder="Your phone">
+              <input class="our-product__form-input" type="email" placeholder="Your email">
+              <textarea class="our-product__form-textarea" placeholder="Leave a message"></textarea>
+              <button class="our-product__form-btn" type="submit">Submit</button>
+            </form>
+            <p class="our-product__form-description">
+              By submitting the form, you agree to the processing of your personal data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-partners wow animate__animated animate__fadeInUp" data-wow-offset="200"">
+      <div class="container">
+        <h3 class="title our-partners__title">our partners</h3>
+        <div class="our-partners__items">
+          <div class="our-partners__item">
+            <img class="our-partners__item-image" src="images/our-partners/1.png" alt="partner 1">
+          </div>
+          <div class="our-partners__item">
+            <img class="our-partners__item-image" src="images/our-partners/2.png" alt="partner 1">
+          </div>
+          <div class="our-partners__item">
+            <img class="our-partners__item-image" src="images/our-partners/3.png" alt="partner 1">
+          </div>
+          <div class="our-partners__item">
+            <img class="our-partners__item-image" src="images/our-partners/4.png" alt="partner 1">
+          </div>
+          <div class="our-partners__item">
+            <img class="our-partners__item-image" src="images/our-partners/5.png" alt="partner 1">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="map wow animate__animated animate__fadeInUp" data-wow-offset="200"">
+      <div id="map"></div>
+    </div>
+
+  </main>
+
+  <footer class="footer wow animate__animated animate__fadeInUp" data-wow-offset="25"">
+    <div class="container">
+      <div class="footer__inner">
+      <div class="footer__logo">
+        <a class="logo__link" href="#">
+          <img src="images/icons/logo-icon.png" alt="logotype">
+        </a>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-contacts">
+          <div class="footer__contacts-wrapper">
+            <ul class="footer__contacts">
+              <li class="footer__contacts-item">
+                <a class="footer__contacts-link" href="tel:6468668200">
+                  <img src="images/icons/phone-icon.svg" alt="phone icon">
+                  (646) 866-8200
+                </a>
+              </li>
+              <li class="footer__contacts-item">
+                <a class="footer__contacts-link" href="#">
+                  <img src="images/icons/mail-icon.svg" alt="mail icon">
+                  info.set@gmail.com
+                </a>
+              </li>
+            </ul>
+            <p class="footer__copy-text">
+              ©2021 SET. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+    async></script>
+  <script>
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 61.50370173557578, lng: 23.760937986354765 },
+        zoom: 11,
+        styles:
+          [
+            {
+              "featureType": "all",
+              "elementType": "all",
+              "stylers": [
+                {
+                  "saturation": "32"
+                },
+                {
+                  "lightness": "-3"
+                },
+                {
+                  "visibility": "on"
+                },
+                {
+                  "weight": "1.18"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "on"
+                }
+              ]
+            },
+            {
+              "featureType": "landscape",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "on"
+                }
+              ]
+            },
+            {
+              "featureType": "landscape.man_made",
+              "elementType": "all",
+              "stylers": [
+                {
+                  "saturation": "-70"
+                },
+                {
+                  "lightness": "14"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "on"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "on"
+                }
+              ]
+            },
+            {
+              "featureType": "transit",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "on"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "all",
+              "stylers": [
+                {
+                  "saturation": "100"
+                },
+                {
+                  "lightness": "-14"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "on"
+                },
+                {
+                  "lightness": "12"
+                }
+              ]
+            }
+          ]
+      });
+    }
+  </script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

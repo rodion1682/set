@@ -1,0 +1,334 @@
+
+// header section setup starts
+
+.header{
+  background: rgba(55, 85, 70, 0.25);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    height: 100px;
+    img{
+      object-fit: cover;
+      height: 100px;
+      margin-top: 10px;
+    }
+  }
+  &__adaprive-btn{
+    display: none;
+  }
+  &__right-contacts{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+  // header__contacts setup starts
+  &__contacts{
+    display: flex;
+    align-items: center;
+  }
+  &__contacts-wrapper{
+    margin-right: 70px;
+  }
+  &__contacts-item{
+    & + .header__contacts-item{
+      margin-left: 70px;
+    }
+  }
+  &__contacts-link{
+    display: flex;
+    color: #fff;
+    position: relative;
+    text-shadow: 2px 2px 5px #000;
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 0;
+      height: 2px;
+      transition: all 0.3s;
+      background-color: #80C721;
+    }
+    &:hover::after{
+      transition: all 0.3s;
+      width: 100%;
+    }
+    img{
+      margin-right: 15px;
+      margin-top: -1px;
+    }
+  }
+  &__social{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+  }
+  &__social-link{
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #80C721;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    text-shadow: 2px 2px 5px #000;
+    svg{
+      width: 13px;
+      height: 14px;
+    }
+    path{
+      fill: #fff;
+    }
+    &:hover{
+      transition: all 0.3s;
+      background-color: #fff;
+      border: 1px solid #80C721;
+      path{
+        fill: #80C721;
+      }
+    }
+  }
+  // header__contacts setup ends
+
+  // header__navigation setup starts
+  &__navigation{
+    padding: 24px 0;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .menu{
+    margin-right: 180px;
+    display: block;
+    &__list{
+      display: flex;
+    }
+    &__list-item{
+      & + .menu__list-item{
+        margin-left: 46px;
+      }
+    }
+    &__list-link{
+      position: relative;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+      &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -42px;
+        height: 2px;
+        width: 0px;
+        background-color: #80C721;
+        transition: width 0.3s;
+      }
+      &:hover::after{
+        transition: width 0.3s;
+        width: 100%;
+      }
+    }
+  }
+  &__right-btn{
+    margin-top: -2px;
+    box-shadow: 0px 4px 15px rgba(128, 199, 33, 0.27);
+    border-radius: 5px;
+    padding: 7px 33px;
+    border: 1px solid #80C721;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    text-shadow: 2px 2px 5px #000;
+    &:hover{
+      border: 1px solid transparent;
+      background-color: #80C721;
+    }
+  }
+}
+
+// header section setup ends
+
+@media (max-width: 1200px){
+  .header{
+    .menu{
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .header{
+    &__contacts-wrapper{
+      margin-right: 50px;
+    }
+    &__contacts-item + .header__contacts-item{
+      margin-left: 40px;
+    }
+    &__navigation{
+      padding: 24px 0 12px;
+      height: auto;
+      text-align: right;
+      display: block;
+    }
+    .menu{
+      margin-right: 0;
+      display: flex;
+      justify-content: flex-end;
+      &__list-link{
+        &::after{
+          bottom: -10px;
+        }
+      }
+    }
+    &__right-btn{
+      display: inline-block;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 800px){
+  .header{
+    &__adaprive-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(#80C721, 0.2);
+      border: 1px solid #80C721;
+      box-shadow: 0px 4px 15px rgba(128, 199, 33, 0.27);
+      cursor: pointer;
+      position: absolute;
+      top: 27px;
+      right: 10px; 
+      z-index: 1;
+      transition: all 0.3s;
+      &.header__adaprive-btn--open{
+        transition: all 0.3s;
+        span{
+          transform: translateX(-20px);
+          opacity: 0;
+        }
+        &::before{
+          transform: rotate(45deg);
+          top: 23px;
+        }
+        &::after{
+          transform: rotate(-45deg);
+          bottom: 23px;
+        }
+      }
+      span{
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        opacity: 1;
+        transform: translateX(0);
+        top: 23px;
+        background-color: #fff;
+        transition: all 0.3s;
+      }
+      &::before,
+      &::after{
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        transition: all 0.3s;
+      }
+      &::before{
+        top: 16px;
+        transform: rotate(0);
+      }
+      &::after{
+        transform: rotate(0);
+        bottom: 16px;
+      }
+      
+    }
+    &__right{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      padding: 97px 0 20px 15px;
+      left: 0;
+      top: 0;
+      transition: transform 0.5s;
+      transform: translateX(-300%);
+      width: 100%;
+      background: rgba(32, 63, 50, 0.92);
+      &.header__right--active{
+        transform: translateX(0);
+        transition: transform 0.5s;
+      }
+    }
+    &__right-contacts{
+      display: block;
+    }
+    &__contacts{
+      display: block;
+    }
+    &__contacts-wrapper{
+      margin: 20px auto 30px;
+    }
+    &__contacts-link{
+      &::after{
+        display: none;
+      }
+    }
+    &__contacts-item +.header__contacts-item{
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    &__social{
+      justify-content: flex-start;
+      margin: 20px 0;
+    }
+    &__social-link{
+      margin-left: 0px;
+    }
+    &__social-item + .header__social-item{
+      margin-left: 30px;
+    }
+    &__navigation{
+      order: -1;
+      text-align: left;
+    }
+    .menu{
+      justify-content: flex-start;
+      &__list{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &__list-link{
+        &::after{
+          display: none;
+        }
+      }
+      &__list-item + .menu__list-item{
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+    &__logo{
+      z-index: 1;
+      img{
+        height: 70px;
+      }
+    }
+  }   
+}

@@ -1,0 +1,57 @@
+
+// our-partners section setup ends
+
+.our-partners{
+  padding: 100px 0 90px;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item-image{
+    height: 70px;
+    object-fit: cover;
+  }
+}
+
+// our-partners section setup ends
+
+@media (max-width: 1400px){
+  .our-partners{
+    &__items{
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 0 auto; 
+    }
+    &__item-image{
+      margin: 20px;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .our-partners{
+    padding: 100px 0 0;
+  }
+}
+
+@media (max-width: 600px){
+  .our-partners{
+    padding: 50px 0 0;
+    &__title{
+      margin-bottom: 20px;
+    }
+    &__item-image{
+      height: 60px;
+    }
+  }
+}
+
+@media (max-width: 400px){
+  .our-partners{
+    &__item-image{
+      margin: 20px 0;
+    }
+  }
+}

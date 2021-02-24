@@ -1,0 +1,139 @@
+
+// production section setup starts
+
+.production{
+  padding: 50px 0 100px;
+  &__background{
+    margin-top: 40px;
+    background-color: #28221D;
+    padding: 130px 0 200px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -100px;
+      width: 100%;
+      height: 232px;
+      background-image: url('../images/white-background.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__items{
+    display: flex;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 0 40px;
+  }
+  &__image{
+    height: 105px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.6px;
+    @extend %montserrat-400;
+  }
+}
+
+// production section setup ends
+
+@media (max-width: 1200px){
+  .production{
+    &__image{
+      height: 75px;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .production{
+    &__background{
+      padding: 100px 0 150px;
+    }
+    &__item{
+      padding: 0 10px;
+    }
+    &__image{
+      height: 65px;
+    }
+  }
+}
+
+@media (max-width: 800px){
+  .production{
+    padding: 50px 0;
+    &__background{
+      padding: 75px 0 100px;
+      &::after{
+        height: 150px;
+      }
+    }
+    &__items{
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 30px auto;
+    }
+    &__image{
+      height: 60px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .production{
+    &__background{
+      padding: 75px 0 100px;
+      &::after{
+        height: 100px;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .production{
+    padding: 25px 0;
+    &__background{
+      padding: 50px 0 70px;
+      &::after{
+        height: 70px;
+        bottom: 0;
+      }
+    }
+    &__image{
+      height: 55px;
+    }
+  }
+}
+
+@media (max-width: 400px){
+  .production{
+    &__background{
+      padding: 30px 0 20px;
+      &::after{
+        display: none;
+      }
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__image{
+      height: 50px;
+    }
+  }
+}
